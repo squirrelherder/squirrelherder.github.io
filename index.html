@@ -5,13 +5,102 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Today's Date</title>
+    <style>
+    h1 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size:2em;
+        color:blue;
+        background-color: orange;
+    }
+
+    h2 {
+        font-family:cursive;
+    }
+
+    .italic_quotes {
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 2em;
+        font-style:italic;
+        color: rgb(201, 40, 40);
+    }
+
+    .tiny_text {
+        font-size:0.5em;
+    }
+
+    .green_background {
+        background-color:rgb(92, 168, 82);
+    }
+
+    #big_bold {
+        font-weight:bold;
+        font-size:2em;
+    }
+
+    table, th, td {
+        border: 1px solid black;
+    }
+
+    </style>
 </head>
 
 <body>
     <script>
-        let name = prompt("What is your name?");
-        alert("Hello, " + name + "!");
+        /*let name = prompt("What is your name?");
+        alert("Hello, " + name + "!");*/
     </script>
+    <h1>Welcome to SquirrelTown</h1>
+    <h2>Your home for all things squirrel.</h2>
+    <br><br>
+    <h3>TABLE OF CONTENTS</h3>
+    <ol>
+        <li><a href=#pic>Picture of squirrel</a></li>
+        <li><a href=#description>Description of squirrel</a></li>
+        <li><a href=#motivation>Motivation of squirrel</a></li>
+        <li><a href=#famous>Famous squirrels</a></li>
+    </ol>
+    <h2 class="italic_quotes" id="pic">This is a squirrel</h2>
+    <img src="https://pbs.twimg.com/media/Dp_MQYTXQAEPJNA.jpg" alt="picture of a squirrel" height=500px>
+    <p id="big_bold">LOOK AT IT</p>
+    <p id="description">Squirrels are found <strong>everywhere</strong>. In your backyard, at the local park, traversing the power lines overhead, conducting their <em>squirrel</em> business.<br>
+    Sometimes, you might see a squirrel reading a newspaper, but don't be silly, squirrels can only read at a 2nd grade level!</p>
+    <h3 id="motivation">Squirrel Motivations <span style="font-size:0.8em">(in no particular order)</span></h3>
+    <ul>
+        <li>Nuts</li>
+        <li>Nuts</li>
+        <li>Nuts</li>
+    </ul>    
+    <br>
+    <h2 id="famous">Famous Squirrels</h2>
+    <table class="green_background">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Origin</th>
+                <th>Picture</th>
+            </tr>
+        </thead>
+            <tr>
+                <td>Rocky the Flying Squirrel</td>
+                <td>Rocky and Bullwinkle</td>
+                <td><img src="https://vignette.wikia.nocookie.net/r__/images/b/bd/Rocky.jpg/revision/latest?cb=20140407183134&path-prefix=rockyandbullwinkle" width=300></td>
+            </tr>
+            <tr>
+                <td>Secret Squirrel</td>
+                <td>The Atom Ant/Secret Squirrel Show</td>
+                <td><img src="https://vignette.wikia.nocookie.net/scoobydoo/images/0/02/Secret_Squirrel_%28SDTU%29.png/revision/latest/scale-to-width-down/350?cb=20170611204516" width=300></td>    
+            </tr>
+            <tr>
+                <td>Slappy Squirrel</td>
+                <td>The Animaniacs</td>
+                <td><img src="https://qph.fs.quoracdn.net/main-qimg-b6fe535980d39aa680678daf5aad3d4e.webp" width=300></td>
+            </tr>
+        <tbody>
+
+        </tbody>
+    </table>
+
+    <h4>Read more about squirrels on <a target="_blank" href="https://en.wikipedia.org/wiki/Squirrel" title="Wikipedia Squirrel">Wikipedia</a></h4>
 </body>
 
 </html>
