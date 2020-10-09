@@ -1,0 +1,191 @@
+body {
+    background-image: url("images/squirrel_background.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#container {
+    background-color: white;
+    width: 600px;
+    padding: 10px;
+    margin: 0 auto;
+    border: 1px solid red;
+}
+
+#title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:2em;
+    color: blue;
+    background-color: orange;
+    position: fixed;
+    text-align: center;
+    width: 620px;
+    height: 40px;
+    top: 50%;
+    left: 50%;
+    margin-top: -475px; /* Negative half of height. */
+    margin-left: -310px; /* Negative half of width. */
+    animation-name: pulse;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in;
+      animation-direction: alternate;
+}
+
+@keyframes pulse {
+
+    from {
+     opacity: 0.0;
+     font-size: 100%;
+    }
+
+    to {
+     opacity: 1.0;
+     font-size: 200%;
+    }
+
+  }
+
+h2, h3 {
+    font-family: cursive;
+    text-align: center;
+}
+
+.italic_quotes {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 2em;
+    font-style:italic;
+    color: rgb(201, 40, 40);
+}
+
+.tiny_text {
+    font-size:0.5em;
+}
+
+.green_background {
+    background-color:rgb(92, 168, 82);
+}
+
+.big_bold {
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+}
+
+td.big_bold {
+    font-weight: bold;
+    font-size: 1em;
+    text-align: center;
+}
+
+table .big_bold {
+    color: white;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+#description {
+    background-color: rgb(40, 169, 201);
+    width: 50%;
+    height: 100px;
+    overflow: auto;
+    margin: 0 auto;
+}
+
+.table_pics {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.motivations_ul {
+    text-align: left;
+    list-style-position: inside;
+    /*border: 1px solid black;*/
+    width: 150px;
+    margin: 0 auto;
+}
+
+.contents_ol {
+    text-align: left;
+    list-style-position: outside;
+    /*border: 1px solid black;*/
+    width: 150px;
+    margin: 0 auto;
+}
+
+.motivations_li {
+    float: none;
+    /*display: inline-block;*/
+    text-align: left;
+    margin-right: 1%;
+    font-weight: 400;
+    margin-left: 80px;
+}
+
+.contents_li {
+    float: none;
+    /*display: inline-block;*/
+    text-align: left;
+    margin-right: 1%;
+    font-weight: 400;
+}
+
+#squirrel_gif {
+    position: relative;
+    width: 50%;
+    left: 20px;
+    z-index: 1;
+}
+
+#leap_gif {
+    position: absolute;
+    top: 3600px;
+    left: 900px;
+    width: 350px;
+    z-index: 2;
+}
+
+#nuts {
+    float: left;
+    width: 200px;
+    margin-left: 100px;
+}
+
+#famous {
+    clear: both;
+    margin-top: 200px;
+}
+
+a:link {
+        color: red;
+}
+
+a:visited {
+        color: orange;
+}
+
+a:hover, a:active, a:focus { 
+        background-color: rgb(255, 0, 251);
+}
+
+cite {
+    font-family: 'Beth Ellen', cursive;
+}
+
+#js-tutorial {
+    float: right;
+}
+
+#calendar {
+    float: left;
+}
+
+#squirrel-vid {
+    float: left;
+    clear: both;
+}
+

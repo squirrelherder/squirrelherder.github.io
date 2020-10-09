@@ -4,103 +4,146 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Squirrel information by Squirrelherder">
+    <meta name="keywords" content="squirrel, squirrelherder">
     <title>Today's Date</title>
-    <style>
-    h1 {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size:2em;
-        color:blue;
-        background-color: orange;
-    }
-
-    h2 {
-        font-family:cursive;
-    }
-
-    .italic_quotes {
-        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        font-size: 2em;
-        font-style:italic;
-        color: rgb(201, 40, 40);
-    }
-
-    .tiny_text {
-        font-size:0.5em;
-    }
-
-    .green_background {
-        background-color:rgb(92, 168, 82);
-    }
-
-    #big_bold {
-        font-weight:bold;
-        font-size:2em;
-    }
-
-    table, th, td {
-        border: 1px solid black;
-    }
-
-    </style>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link href="https://fonts.googleapis.com/css?family=Beth+Ellen&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <script>
-        /*let name = prompt("What is your name?");
-        alert("Hello, " + name + "!");*/
-    </script>
-    <h1>Welcome to SquirrelTown</h1>
-    <h2>Your home for all things squirrel.</h2>
-    <br><br>
-    <h3>TABLE OF CONTENTS</h3>
-    <ol>
-        <li><a href=#pic>Picture of squirrel</a></li>
-        <li><a href=#description>Description of squirrel</a></li>
-        <li><a href=#motivation>Motivation of squirrel</a></li>
-        <li><a href=#famous>Famous squirrels</a></li>
-    </ol>
-    <h2 class="italic_quotes" id="pic">This is a squirrel</h2>
-    <img src="https://pbs.twimg.com/media/Dp_MQYTXQAEPJNA.jpg" alt="picture of a squirrel" height=500px>
-    <p id="big_bold">LOOK AT IT</p>
-    <p id="description">Squirrels are found <strong>everywhere</strong>. In your backyard, at the local park, traversing the power lines overhead, conducting their <em>squirrel</em> business.<br>
-    Sometimes, you might see a squirrel reading a newspaper, but don't be silly, squirrels can only read at a 2nd grade level!</p>
-    <h3 id="motivation">Squirrel Motivations <span style="font-size:0.8em">(in no particular order)</span></h3>
-    <ul>
-        <li>Nuts</li>
-        <li>Nuts</li>
-        <li>Nuts</li>
-    </ul>    
-    <br>
-    <h2 id="famous">Famous Squirrels</h2>
-    <table class="green_background">
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>Origin</th>
-                <th>Picture</th>
-            </tr>
-        </thead>
-            <tr>
-                <td>Rocky the Flying Squirrel</td>
-                <td>Rocky and Bullwinkle</td>
-                <td><img src="https://vignette.wikia.nocookie.net/r__/images/b/bd/Rocky.jpg/revision/latest?cb=20140407183134&path-prefix=rockyandbullwinkle" width=300></td>
-            </tr>
-            <tr>
-                <td>Secret Squirrel</td>
-                <td>The Atom Ant/Secret Squirrel Show</td>
-                <td><img src="https://vignette.wikia.nocookie.net/scoobydoo/images/0/02/Secret_Squirrel_%28SDTU%29.png/revision/latest/scale-to-width-down/350?cb=20170611204516" width=300></td>    
-            </tr>
-            <tr>
-                <td>Slappy Squirrel</td>
-                <td>The Animaniacs</td>
-                <td><img src="https://qph.fs.quoracdn.net/main-qimg-b6fe535980d39aa680678daf5aad3d4e.webp" width=300></td>
-            </tr>
-        <tbody>
+    <iframe id="js-tutorial" src="https://docs.google.com/present/embed?id=dggjrx3s_2119zdj9k4cf" width="410" height="342"></iframe>
+    <iframe id="calendar" src="http://www.google.com/calendar/embed?src=en.usa%23holiday%40group.v.calendar.google.com" width="600" height="400"></iframe>
+    <iframe id="squirrel-vid" width="500" height="400" src="https://www.youtube.com/embed/IDaqFiLvcB0?start=67&end=120;" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div id="container">
+        <script>
+            console.log(HelloWorld);
+        </script>
+        <h1 id="title">Welcome to SquirrelTown</h1>
+        <br><br><br><br> <!-- comment -->
+        <h2>Your home for all things squirrel.</h2>
+        <br><br>
+        <h3>TABLE OF CONTENTS</h3>
+        <ol class="contents_ol">
+            <li class="contents_li"><a href=#pic>Picture of squirrel</a></li>
+            <li class="contents_li"><a href=#description>Description of squirrel</a></li>
+            <li class="contents_li"><a href=#motivation>Motivation of squirrel</a></li>
+            <li class="contents_li"><a href=#famous>Famous squirrels</a></li>
+            <li class="contents_li"><a href="javascript_test_page.html">Javascript test page</a></li>
+        </ol>
+        <h2 class="italic_quotes green_background" id="pic">This is a squirrel</h2>
+        <a href="images/squirrel.jpg">
+            <img src="images/squirrel.jpg" alt="fat squirrel" width=600>
+        </a>
+        <p class="big_bold">LOOK AT IT</p>
+        <br><br>
+        <p id="description">Squirrels are found <strong>everywhere</strong>. In your backyard, at the local park, traversing the power lines overhead, conducting their <em>squirrel</em> business.<br>
+        Sometimes, you might see a squirrel reading a newspaper, but don't be silly, squirrels can only read at a 2nd grade level!</p>
+        <br><br>
+        
+        <h3 id="motivation">Squirrel Motivations <span style="font-size:0.8em">(in no particular order)</span></h3>
+        <img id="nuts" src="images/nuts.jpg" alt="squirrel eating nuts">
+        <ul id="motivations_ul">
+            <li class="motivations_li">Nuts</li>
+            <li class="motivations_li">Nuts</li>
+            <li class="motivations_li">Nuts</li>
+        </ul>    
+        <br><br>
+        <h2 id="famous">Famous Squirrels</h2>
+        <table class="green_background">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Origin</th>
+                    <th>Picture</th>
+                </tr>
+            </thead>
+                <tr>
+                    <td class="big_bold">Rocky the Flying Squirrel</td>
+                    <td class="big_bold">Rocky and Bullwinkle</td>
+                    <td class="big_bold"><img class="table_pics" src="https://vignette.wikia.nocookie.net/r__/images/b/bd/Rocky.jpg/revision/latest?cb=20140407183134&path-prefix=rockyandbullwinkle" alt="rocky and bullwinkle" width=300></td>
+                </tr>
+                <tr>
+                    <td class="big_bold">Secret Squirrel</td>
+                    <td class="big_bold">The Atom Ant/Secret Squirrel Show</td>
+                    <td class="big_bold"><img class="table_pics" src="https://vignette.wikia.nocookie.net/scoobydoo/images/0/02/Secret_Squirrel_%28SDTU%29.png/revision/latest/scale-to-width-down/350?cb=20170611204516" alt="secret squirrel" width=300></td>    
+                </tr>
+                <tr>
+                    <td class="big_bold">Slappy Squirrel</td>
+                    <td class="big_bold">The Animaniacs</td>
+                    <td class="big_bold"><img class="table_pics" src="https://qph.fs.quoracdn.net/main-qimg-b6fe535980d39aa680678daf5aad3d4e.webp" alt="slappy squirrel" width=300></td>
+                </tr>
+            <tbody>
 
-        </tbody>
-    </table>
+            </tbody>
+        </table>
 
-    <h4>Read more about squirrels on <a target="_blank" href="https://en.wikipedia.org/wiki/Squirrel" title="Wikipedia Squirrel">Wikipedia</a></h4>
+        <br>
+        <blockquote cite=squirrelherder>
+            <cite>To be squirrel or not to be squirrel,
+            that is the question.</cite>
+        </blockquote>
+        <br>
+
+        <h4>Read more about squirrels on the <abbr title="World Wide Web">WWW</abbr> at <a target="_blank" href="https://en.wikipedia.org/wiki/Squirrel" title="Wikipedia: Squirrel">Wikipedia</a></h4>
+        <br>
+        <hr>
+        <br>
+        <h3>Squirrely Feedback</h3>
+        <form action="process.php" method="POST">
+            <div>
+                <label>First Name</label>
+                <input type="text" name="firstName" placeholder="Enter first name">
+            </div>
+            <br>
+            <div>
+                <label>Last Name</label>
+                <input type="text" name="firstName">
+            </div>
+            <br>
+            <div>
+                <label>Email</label>
+                <input type="email" name="email">
+            </div>
+            <br>
+            <div>
+                <label>Message</label>
+                <textarea name="message"></textarea>
+            </div>
+            <br>
+            <div>
+                <label>Gender</label>
+                <select name="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label>Age:</label>
+                <input type="number" name="age" value="0">
+            </div>
+            <br>
+            <div>
+                <label>Birthday:</label>
+                <input type="date" name="birthday">
+            </div>
+            <br>
+            <input type="submit" name="submit" value="Submit">
+        </form>
+        
+        <button>Click Me</button>
+        <br><br><br>
+        <div id="gifs">
+            <img id="squirrel_gif" src="images/squirrel.gif" alt="surprised squirrel">
+            <img id="leap_gif" src="images/leap.gif" alt="leaping squirrel">
+        </div>
+        <div style="margin-top:200px"></div>
+        <footer>
+            <p>Copyright &copy; 2019, Squirrelherder LLC</p>
+        </footer>
+    </div>
 </body>
 
 </html>
